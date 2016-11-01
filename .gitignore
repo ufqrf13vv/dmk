@@ -1,0 +1,6 @@
+build/
+node_modules/
+src/js/slick/
+src/js/jquery-2.2.0.js
+src/js/jquery-ui.min.js
+src/fonts/
