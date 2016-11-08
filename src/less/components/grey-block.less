@@ -1,0 +1,47 @@
+.grey-block {
+	background: #f5f6f6;
+
+	padding-top: 70px;
+	padding-bottom: 40px;
+
+	margin-bottom: 50px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item:not(:last-child) {
+
+		@media @large {
+			width: 70%;
+		}
+
+		@media @medium {
+			width: 65%; 
+		}
+
+		@media @small {
+			width: 55%;
+		}
+	}
+
+	&__title {
+		font-family: @fmedium;
+		font-size: 18px;
+		text-transform: uppercase;
+
+		margin-bottom: 40px;
+	}
+
+	& p {
+		line-height: 24px;
+	}
+
+	&__image {
+		width: 280px;
+		height: 360px;
+		background: #cdcdcd;
+	}
+}

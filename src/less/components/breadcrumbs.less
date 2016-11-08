@@ -1,0 +1,40 @@
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 33px;
+
+	list-style: none;
+
+	&__item {
+		font-family: @fbold;
+		font-size: 18px;
+
+		text-transform: uppercase;
+
+		color: #333333;
+
+		&:not(:last-child) {
+			margin-bottom: 13px;
+		}
+
+		& a {
+			font-family: @fregular;
+			font-size: 13px;
+
+			text-decoration: none;
+			text-transform: none;
+
+			color: #333333;
+
+			position: relative;
+
+			&::after {
+				content: url('../img/arrow.png');
+
+				position: absolute;
+				top: 0;
+				right: -30px;
+			}
+		}
+	}
+}

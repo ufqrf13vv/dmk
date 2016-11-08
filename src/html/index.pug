@@ -9,6 +9,9 @@ html
 		link(rel='stylesheet', href='css/style.css')
 
 	body
+		
+		include includes/header
+
 		.main-slider
 			.main-slider__wrapper
 				.main-slider__slide
@@ -19,60 +22,67 @@ html
 							.main-slider__desc Дальневосточная Металлургическая Компания
 							.main-slider__slogan Это <span>надежно</span>
 
+						.main-slider__price
+							.main-slider__price-title Наш прайс-лист
+							a.main-slider__price-link(href="#") Скачать
+
+
+
+
 					.main-slider__footer
 						.container
 							.main-slider__footer-text
 								.main-slider__attention Внимание!
 								.main-slider__footer-desc При оформление заказа через сайт действует система дополнительных скидок!<br>Оформляйте заказ и уточняйте свою скидку у менеджера!
 
-		header.header
+							form.call-back
+								.call-back__title Отправить заявку
+								.call-back__row
+									input.call-back__input(type="text", placeholder="Имя...")
+								.call-back__row
+									input.call-back__input(type="text", name="phone", placeholder="Телефон...")
+									input.call-back__input(type="text", placeholder="E-mail...")
+								.call-back__row
+									textarea.call-back__text(placeholder="Заявка на продукцию...")
+								.call-back__row
+									input.call-back__submit(type="submit")
+
+		.content
 			.container
-				.header__wrapper
-					a.header__logo(href="#")
-						img(src="img/logo.png")
+				.feature
+					.feature__title 12 лет на рынке
+					.feature__text Наше предприятие является одним из крупнейших в Хабаровском крае по поставкам труб, металлопроката и метизной продукции. Сегодня мы имеем возможность доставлять своим клиентам десятки тысячи тонн металлопродукции ежемесячно.
 
-					.header__block
-						.header__contacts
-							.header__title г. Хабаровск
-							.header__text +7(4212) <span>45-99-45</span>
-						.header__contacts
-							.header__title г. Советская Гавань
-							.header__text +7(42138) <span>6-06-26</span>
-						.header__contacts
-							.header__title Почта
-							.header__text <span>dmk@mail.redcom.ru</span>
+				.description
+					h3 Дальневосточная Металлургическая Компания - в тройке лучших региональных компаний Дальневосточного федерального округа за 1-е полугодие 2013 года
 
-		.nav
-			.container
-				.nav__block
-					button.nav__burger
-						span.nav__burger-top
-						span.nav__burger-center
-						span.nav__burger-bottom
+			.grey-block
+				.container
+					.grey-block__wrapper
+						.grey-block__item
+							.grey-block__title ДАЛЬНЕВОСТОЧНАЯ МЕТАЛЛУРГИЧЕСКАЯ КОМПАНИЯ - ОФИЦИАЛЬНЫЙ ДИЛЕР ОАО "ЧЕЛЯБИНСКИЙ ТРУБОПРОКАТНЫЙ ЗАВОД" И ОАО "ПЕРВОУРАЛЬСКИЙ НОВОТРУБНЫЙ ЗАВОД" НА 2016Г.
+							p По результатам работы в 2015г., руководством ОАО "ЧТПЗ" и ОАО "ПНТЗ" было принято решение продлить на очередной год полномочия единственного официального дилера по Дальневосточному Федеральному округу ООО "ДМК-Снаб, в очередной раз подтвердившее свое право представлять всю линейку продукции компаний на Российском рынке.	
+							p Как всегда основными критериями отбора дилеров были: надежность, стабильность закупок, платежеспособность, соответствие генеральной стратегии компании по продвижению продукции.
+						.grey-block__item
+							.grey-block__image
+								img(src="")
 
-				ul.nav__list
-					li.nav__item
-						a.nav__link(href="#") Главная
-					li.nav__item
-						a.nav__link(href="#") Продукция
-					li.nav__item
-						a.nav__link(href="#") Услуги
-					li.nav__item
-						a.nav__link(href="#") О компании
-					li.nav__item
-						a.nav__link(href="#") Контакты
+		.container
+			.providers
+				.providers__title Наши поставщики:
+				.providers__wrapper
+					.providers__item
+						img(src="")
+					.providers__item
+						img(src="")
+					.providers__item
+						img(src="")
+					.providers__item
+						img(src="")
+					.providers__item
+						img(src="")
 
-		form.call-back
-			.call-back__title Отправить заявку
-			.call-back__row
-				input.call-back__input(type="text", placeholder="Имя...")
-			.call-back__row
-				input.call-back__input(type="text", placeholder="Телефон...")
-				input.call-back__input(type="text", placeholder="E-mail...")
-			.call-back__row
-				textarea.call-back__text
-			.call-back__row
-				input.call-back__sumbit(type="submit")
+		include includes/footer
 
 		script(src="js/jquery-2.2.0.js")
 		script(src="js/script.js")

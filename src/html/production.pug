@@ -1,0 +1,59 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title DMK
+
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		
+		include includes/header
+
+		section.main-section
+			.container
+				ul.breadcrumbs
+					li.breadcrumbs__item
+						a(href="#") Главная
+					li.breadcrumbs__item Продукция
+
+				.wrapper
+					aside.aside
+						ul.catalog
+							li.catalog__item
+								a.catalog__link(href="#") Сортовой прокат
+									span.vertical
+									span.horizontal
+								ul.catalog__sublist
+									li.catalog__subitem
+										a.catalog__sublink(href="#") Товар 1
+									li.catalog__subitem
+										a.catalog__sublink(href="#") Товар 2
+									li.catalog__subitem
+										a.catalog__sublink(href="#") Товар 3
+									li.catalog__subitem
+										a.catalog__sublink(href="#") Товар 4
+									li.catalog__subitem
+										a.catalog__sublink(href="#") Товар 5
+									li.catalog__subitem
+										a.catalog__sublink(href="#") Товар 6
+							li.catalog__item
+								a.catalog__link(href="#") Трубная продукция, отводы
+									span.vertical
+									span.horizontal
+							li.catalog__item
+								a.catalog__link(href="#") Метизная продукция
+									span.vertical
+									span.horizontal
+							li.catalog__item
+								a.catalog__link(href="#") Электроды
+									span.vertical
+									span.horizontal
+
+
+		include includes/footer
+
+		script(src="js/jquery-2.2.0.js")
+		script(src="js/script.js")

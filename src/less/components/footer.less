@@ -1,0 +1,167 @@
+.footer {
+	background: #4b4b4b;
+	border-top: 3px solid #dadada;
+
+	padding-top: 55px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		border-bottom: 1px solid #6f6f6f;
+
+		padding-bottom: 42px;
+
+		&--bottom {
+			border-bottom: none;
+		}
+	}
+
+	&__logo {
+		display: flex;
+
+		text-decoration: none;
+
+		margin-bottom: 24px;
+		
+		&-image {
+			width: 40px;
+			height: 40px;
+
+			background: #6f6f6f;
+			border-radius: 50%;
+
+			margin-right: 10px;
+		}
+
+		&-text {
+			font-family: @fcbold;
+			font-size: 22px;
+
+			color: #ffffff;
+
+			padding-top: 7px;
+		}
+	}
+
+	&__text {
+		width: 395px;
+
+		color: #6f6f6f;
+
+		margin-bottom: 35px;
+	}
+
+	&__email {
+		display: block;
+
+		font-family: @fcregular;
+		font-size: 17px;
+
+		color: #ffffff;
+
+		text-decoration: none;
+
+		@media @medium {
+			margin-bottom: 0;
+		}
+
+		@media @small {
+			margin-bottom: 20px;
+		}
+
+		@media @extrasmall {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__title {
+		font-family: @fcbold;
+		font-size: 16px;
+		text-transform: uppercase;
+
+		color: #ffffff;
+
+		padding-bottom: 24px;
+		margin-bottom: 27px;
+
+		position: relative;
+
+		&::after {
+			content: '';
+
+			width: 25px;
+			height: 2px;
+
+			background: #6dc234;
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	&__menu {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 12px;
+	}
+
+	&__link {
+		font-size: 13px;
+
+		color: #ffffff;
+
+		text-decoration: none;
+	}
+
+	&__adress {
+		font-size: 13px;
+
+		color: #ffffff;
+
+		margin-bottom: 8px;
+	}
+
+	&__phone {
+		font-family: @fcregular;
+		font-size: 24px;
+		color: #ffffff;
+		
+		& > span {
+			font-family: @fcbold;
+		}
+	}
+
+	&__phone:not(:last-child) {
+		margin-bottom: 27px;
+	}
+
+	&__copyright {
+		font-family: @fcregular;
+
+		color: #ffffff;
+
+		padding-top: 32px;
+	}
+
+	&__developer {
+		font-family: @fcregular;
+
+		color: #686868;
+
+		padding-top: 32px;
+
+		& a {
+			text-decoration: none;
+
+			color: #686868;
+		}
+	}
+}
